@@ -18,7 +18,7 @@ cliente = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # Crear bucle para leer del teclado
 while True:
-    mensaje = input("Escribe un mensaje para enviar al servidor (o 'salir' para terminar): ")
+    mensaje = input("Escribe un mensaje para enviar al servidor (o 'fin' para terminar): ")
     if mensaje.lower() == 'fin':
         break
     # Enviar datos al servidor
