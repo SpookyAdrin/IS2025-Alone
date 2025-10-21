@@ -4,7 +4,7 @@ import time
 # Configuración de conexión (credenciales incrustadas en el código)
 HOST = "localhost"
 USER = "uo266757" 
-PASSWORD = "Flakkedfanboy21+"  
+PASSWORD = ""  
 
 # Conectar al servidor telnet
 tn = telnetlib.Telnet(HOST)
