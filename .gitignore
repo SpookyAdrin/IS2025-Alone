@@ -1,5 +1,5 @@
 # Ignorar todos los archivos de video y el contenido grande del ejercicio
-html/video5/
+P5/html/video5/
 
 # Pero NO ignorar los archivos HTML dentro de esa carpeta
-!html/video5/*.html
+!P5/html/video5/*.html
