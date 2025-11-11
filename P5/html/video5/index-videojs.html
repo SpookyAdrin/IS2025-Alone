@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Video.js — Big Buck Bunny</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Estilos de Video.js -->
+    <link
+      href="https://vjs.zencdn.net/8.23.4/video-js.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem;
+        background: #fafafa;
+      }
+      h1 {
+        text-align: center;
+      }
+      .vjs-big-play-button {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Reproductor con Video.js</h1>
+
+    <video
+      id="my-video"
+      class="video-js vjs-default-skin"
+      controls
+      preload="auto"
+      width="640"
+      height="360"
+      poster="./big-buck-bunny-poster.png"
+      data-setup="{}"
+    >
+      <source src="./big_buck_bunny.mp4" type="video/mp4" />
+      <source src="./big_buck_bunny.webm" type="video/webm" />
+      <source src="./big_buck_bunny.ogv" type="video/ogg" />
+
+      <!-- Subtítulos si ya creaste subs-es.vtt -->
+      <track
+        src="./subs-es.vtt"
+        kind="subtitles"
+        srclang="es"
+        label="Español"
+        default
+      />
+
+      <!-- Fallback -->
+      <p class="vjs-no-js">
+        Para ver este vídeo, habilita JavaScript y usa un navegador que
+        <a
+          href="https://videojs.com/html5-video-support/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >soporte vídeo HTML5</a
+        >.
+      </p>
+    </video>
+
+    <!-- Script principal de Video.js -->
+    <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
+  </body>
+</html>
